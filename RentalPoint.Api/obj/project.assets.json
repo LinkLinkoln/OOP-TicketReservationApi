@@ -2793,11 +2793,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Link\\Desktop\\Cinema\\TicketBookingApp\\RentalPoint.Api\\TicketBookingApplication.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Link\\Desktop\\Cinema\\TicketBookingApp\\OOP-TicketReservationApi\\RentalPoint.Api\\TicketBookingApplication.Api.csproj",
       "projectName": "TicketBookingApplication.Api",
-      "projectPath": "C:\\Users\\Link\\Desktop\\Cinema\\TicketBookingApp\\RentalPoint.Api\\TicketBookingApplication.Api.csproj",
+      "projectPath": "C:\\Users\\Link\\Desktop\\Cinema\\TicketBookingApp\\OOP-TicketReservationApi\\RentalPoint.Api\\TicketBookingApplication.Api.csproj",
       "packagesPath": "C:\\Users\\Link\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Link\\Desktop\\Cinema\\TicketBookingApp\\RentalPoint.Api\\obj\\",
+      "outputPath": "C:\\Users\\Link\\Desktop\\Cinema\\TicketBookingApp\\OOP-TicketReservationApi\\RentalPoint.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\visualCache\\NuGetPackages"

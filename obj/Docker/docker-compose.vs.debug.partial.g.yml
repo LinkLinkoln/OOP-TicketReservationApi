@@ -15,8 +15,8 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=/.nuget/fallbackpackages
     volumes:
-      - C:\Users\Link\Desktop\Cinema\TicketBookingApp\RentalPoint.Api:/app:rw
-      - C:\Users\Link\Desktop\Cinema\TicketBookingApp:/src:rw
+      - C:\Users\Link\Desktop\Cinema\TicketBookingApp\OOP-TicketReservationApi\RentalPoint.Api:/app:rw
+      - C:\Users\Link\Desktop\Cinema\TicketBookingApp\OOP-TicketReservationApi:/src:rw
       - C:\Users\Link\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\Link\.nuget\packages:/.nuget/packages:ro
       - D:\visualCache\NuGetPackages:/.nuget/fallbackpackages:ro

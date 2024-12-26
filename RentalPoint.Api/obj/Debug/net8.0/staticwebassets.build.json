@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "T8801tab3m5z0AAWNw5Z0k29B/ZDYp8Y/THi4XOfevU=",
+  "Hash": "Gdw1MkLioJfkP85tlsRFyldc0hh8zdDgMgPHGaN8Mk4=",
   "Source": "TicketBookingApplication.Api",
   "BasePath": "_content/TicketBookingApplication.Api",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "TicketBookingApplication.Api\\wwwroot",
       "Source": "TicketBookingApplication.Api",
-      "ContentRoot": "C:\\Users\\Link\\Desktop\\Cinema\\TicketBookingApp\\RentalPoint.Api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Link\\Desktop\\Cinema\\TicketBookingApp\\OOP-TicketReservationApi\\RentalPoint.Api\\wwwroot\\",
       "BasePath": "_content/TicketBookingApplication.Api",
       "Pattern": "**"
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NgDfu8UXAkM=",
+  "dgSpecHash": "O1nFzo/erSw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Link\\Desktop\\Cinema\\TicketBookingApp\\RentalPoint.Api\\TicketBookingApplication.Api.csproj",
+  "projectFilePath": "C:\\Users\\Link\\Desktop\\Cinema\\TicketBookingApp\\OOP-TicketReservationApi\\RentalPoint.Api\\TicketBookingApplication.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Link\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Link\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
