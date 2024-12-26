@@ -1,0 +1,66 @@
+name: dockercompose15820450715732032123
+services:
+  db:
+    environment:
+      MYSQL_DATABASE: mydatabase
+      MYSQL_ROOT_PASSWORD: mysecretpassword
+    image: mysql:5.7
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 3306
+        published: "3306"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: volume
+        source: db_data
+        target: /var/lib/mysql
+        volume: {}
+  rentalpoint.api:
+    build:
+      context: C:\Users\rodio\Desktop\RentalPoint\RentalPoint
+      dockerfile: RentalPoint.Api/Dockerfile
+    depends_on:
+      db:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+      ConnectionStrings__DefaultConnection: Server=db;Database=mydatabase;User=root;Password=mysecretpassword;
+    image: rentalpointapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "80"
+        protocol: tcp
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\rodio\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\rodio\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+networks:
+  default:
+    name: dockercompose15820450715732032123_default
+volumes:
+  db_data:
+    name: dockercompose15820450715732032123_db_data

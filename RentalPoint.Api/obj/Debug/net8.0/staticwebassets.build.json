@@ -1,0 +1,20 @@
+{
+  "Version": 1,
+  "Hash": "T8801tab3m5z0AAWNw5Z0k29B/ZDYp8Y/THi4XOfevU=",
+  "Source": "TicketBookingApplication.Api",
+  "BasePath": "_content/TicketBookingApplication.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TicketBookingApplication.Api\\wwwroot",
+      "Source": "TicketBookingApplication.Api",
+      "ContentRoot": "C:\\Users\\Link\\Desktop\\Cinema\\TicketBookingApp\\RentalPoint.Api\\wwwroot\\",
+      "BasePath": "_content/TicketBookingApplication.Api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [],
+  "Endpoints": []
+}

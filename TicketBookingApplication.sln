@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketBookingApplication.Api", "RentalPoint.Api\TicketBookingApplication.Api.csproj", "{D02670F3-CF4B-4D93-8A6E-7FD74D076D0F}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{6988809F-F799-4D5F-9B8C-93A734DB8686}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D02670F3-CF4B-4D93-8A6E-7FD74D076D0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D02670F3-CF4B-4D93-8A6E-7FD74D076D0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D02670F3-CF4B-4D93-8A6E-7FD74D076D0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D02670F3-CF4B-4D93-8A6E-7FD74D076D0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6988809F-F799-4D5F-9B8C-93A734DB8686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6988809F-F799-4D5F-9B8C-93A734DB8686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6988809F-F799-4D5F-9B8C-93A734DB8686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6988809F-F799-4D5F-9B8C-93A734DB8686}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43A3DC89-FDD7-4F07-87A0-9570C7D03AFF}
+	EndGlobalSection
+EndGlobal

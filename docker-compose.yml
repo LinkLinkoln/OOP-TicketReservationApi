@@ -1,0 +1,48 @@
+version: '3.4'
+
+services:
+  rentalpoint.api:
+    image: ${DOCKER_REGISTRY-}rentalpointapi
+    build:
+      context: .
+      dockerfile: RentalPoint.Api/Dockerfile
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=db-ticket;Database=mydatabase;User=root;Password=mysecretpassword;SslMode=Preferred;
+    ports:
+      - "80:80"
+    depends_on:
+      - db-ticket
+    networks:
+      - rentalpoint-network
+
+  db-ticket:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: mysecretpassword
+      MYSQL_DATABASE: mydatabase
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - rentalpoint-network
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    environment:
+      PMA_HOST: db-ticket
+      MYSQL_ROOT_PASSWORD: mysecretpassword
+    ports:
+      - "8080:80"
+    depends_on:
+      - db-ticket
+    networks:
+      - rentalpoint-network
+
+volumes:
+  db_data:
+
+networks:
+  rentalpoint-network:
